@@ -1,5 +1,8 @@
 # AUT-42 session 1: verified C awaiting landing prerequisites
 
+Historical checkpoint: see `../aut42-session-2/README.md` for subsequent audit repairs and a correction to the literal-pool finding below. Level 41 contains 20.0f at `0x00220CC4`; 0.05f is the main program's value at that address, so the source has a real literal error.
+
+
 49 game-code candidates, covering 4,824 retail bytes (4,688 compiled bytes plus alignment), were reconstructed from retail/m2c and existing matched siblings on 2026-10-22. All pass `tools/try_func.py --diff`; their scratch objects pass 192 relocation checks with 0 mismatches and 0 unresolved references. No near misses are retained.
 
 These are pending source patches, **not additions to the matching progress total**. They are kept outside `src/` because this host lacks the PAL data required by the current reporting workflow, and the baseline audit needs reconciliation. No compiler, flags, assembler transformations, audit logic, or reporting logic was changed to obtain the results.
