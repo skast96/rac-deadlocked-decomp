@@ -17,6 +17,8 @@ Best attempts at functions that do not match yet. They are not built; see
 | [`func_L41_0040F218`](shared/func_L41_0040F218.c) | shared | 376 | BYTES 5/376 |
 | [`func_0011C750`](core/func_0011C750.c) | core | 68 | BYTES 1/68 (variadic spill pointer uses sp+0x80; retail sp+0x50; tools/try_func.py func_0011C750 --diff) |
 | [`func_L02_003C56E8`](shared/func_L02_003C56E8.c) | shared | 224 | BYTES 4/224 |
+| [`func_0015F3B8`](core/func_0015F3B8.c) | core | 52 | BYTES 1/52 |
+| [`func_0015E098`](core/func_0015E098.c) | core | 92 | BYTES 2/92 |
 | [`func_L00_006C69F0`](shared/func_L00_006C69F0.c) | shared | 184 | BYTES 5/180 (4 words differ) |
 | [`func_L01_00568C08`](shared/func_L01_00568C08.c) | shared | 432 | BYTES 12/428 |
 | [`func_L41_00445E10`](shared/func_L41_00445E10.c) | shared | 216 | BYTES 7/216 |
@@ -56,6 +58,7 @@ Best attempts at functions that do not match yet. They are not built; see
 | [`func_L05_004F24B0`](shared/func_L05_004F24B0.c) | shared | 104 | BYTES 9/104 |
 | [`func_0011F6F8`](core/func_0011F6F8.c) | core | 132 | BYTES 12/132 (5 words differ) |
 | [`func_004979A8`](game/func_004979A8.c) | game | 312 | BYTES 30/308 |
+| [`func_0015F018`](core/func_0015F018.c) | core | 80 | BYTES 8/80 |
 | [`func_L00_005FED90`](shared/func_L00_005FED90.c) | shared | 88 | BYTES 9/88 |
 | [`func_001412F8`](core/func_001412F8.c) | core | 140 | BYTES 15/140 |
 | [`func_00503B88`](game/func_00503B88.c) | game | 168 | BYTES 18/164 (10 words differ) |
@@ -117,6 +120,7 @@ Best attempts at functions that do not match yet. They are not built; see
 | [`func_01EED7A8`](net/func_01EED7A8.c) | net | 252 | BYTES 54/252 (37 words differ) |
 | [`func_01E9E710`](net/func_01E9E710.c) | net | 128 | BYTES 28/128 (15 words differ) |
 | [`func_L01_004CFEC8`](shared/func_L01_004CFEC8.c) | shared | 144 | BYTES 31/140 |
+| [`func_0011EB90`](core/func_0011EB90.c) | core | 40 | BYTES 9/40 (return sign-extension scheduled before ra reload; tools/try_func.py func_0011EB90 --diff) |
 | [`func_L00_006F6FE0`](shared/func_L00_006F6FE0.c) | shared | 304 | BYTES 78/300 |
 | [`func_L01_00498698`](shared/func_L01_00498698.c) | shared | 240 | BYTES 76/240 |
 | [`func_01EC9640`](net/func_01EC9640.c) | net | 128 | BYTES 44/128 |
@@ -126,9 +130,6 @@ Best attempts at functions that do not match yet. They are not built; see
 | [`func_L00_005908F0`](shared/func_L00_005908F0.c) | shared | 200 | BYTES 113/200 |
 | [`func_L00_006AA1F0`](shared/func_L00_006AA1F0.c) | shared | 272 | BYTES 177/272 |
 | [`func_001559E0`](core/func_001559E0.c) | core | 36 | SIZE 60/36 (tail-call form; tools/try_func.py func_001559E0 build/try/func_001559E0/p1.c --diff) |
-| [`func_0015F018`](core/func_0015F018.c) | core | 80 | BYTES 8/80 (only `s0`/`ra` save scheduling differs; tools/try_func.py func_0015F018 build/try/func_0015F018/p1.c --diff) |
-| [`func_0015E098`](core/func_0015E098.c) | core | 92 | BYTES 2/92 (only `addu` operand order at +0x10; tools/try_func.py func_0015E098 build/try/func_0015E098/p6.c --diff) |
-| [`func_0015F3B8`](core/func_0015F3B8.c) | core | 52 | BYTES 1/52 (only `addu` operand order at +0x10; tools/try_func.py func_0015F3B8 build/try/func_0015F3B8/p2.c --diff) |
 | [`func_004B79F8`](game/func_004B79F8.c) | game | 112 | not recorded |
 | [`func_004C6070`](game/func_004C6070.c) | game | 328 | SIZE ours 300 / retail 328 |
 | [`func_004C8388`](game/func_004C8388.c) | game | 56 | not recorded |
