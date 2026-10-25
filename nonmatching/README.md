@@ -126,6 +126,7 @@ Best attempts at functions that do not match yet. They are not built; see
 | [`func_L00_005908F0`](shared/func_L00_005908F0.c) | shared | 200 | BYTES 113/200 |
 | [`func_L00_006AA1F0`](shared/func_L00_006AA1F0.c) | shared | 272 | BYTES 177/272 |
 | [`func_001559E0`](core/func_001559E0.c) | core | 36 | SIZE 60/36 (tail-call form; tools/try_func.py func_001559E0 build/try/func_001559E0/p1.c --diff) |
+| [`func_0015F018`](core/func_0015F018.c) | core | 80 | BYTES 8/80 (only `s0`/`ra` save scheduling differs; tools/try_func.py func_0015F018 build/try/func_0015F018/p1.c --diff) |
 | [`func_0015E098`](core/func_0015E098.c) | core | 92 | BYTES 2/92 (only `addu` operand order at +0x10; tools/try_func.py func_0015E098 build/try/func_0015E098/p6.c --diff) |
 | [`func_0015F3B8`](core/func_0015F3B8.c) | core | 52 | BYTES 1/52 (only `addu` operand order at +0x10; tools/try_func.py func_0015F3B8 build/try/func_0015F3B8/p2.c --diff) |
 | [`func_004B79F8`](game/func_004B79F8.c) | game | 112 | not recorded |
